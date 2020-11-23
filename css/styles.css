@@ -553,12 +553,12 @@ align-content: center;
 margin-left: 93px;
 padding-top: 12px;
 width: 570px;
-outline: 1px solid tomato;
 }
 .footer-subscribe {
     display: flex;
     position: relative;
     align-items: center;
+    margin-top: 20px;
 }
 .button-subscribe {
    font-weight: bold;
@@ -575,11 +575,29 @@ outline: 1px solid tomato;
    border-radius: 4px;
     min-width: 200px;
      height: 50px;
+     margin-left: 12px;
+}
+.subscribe-form {
+    font-size: 16px;
+    line-height: 1.11;
+    letter-spacing: 0.03em;
 }
 
 .icon-telegram {
     padding-left: 10px;
     fill: #ffffff;
+}
+
+.email {
+    min-width: 358px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /*----------------------------BUTTON----------------------------*/
@@ -642,6 +660,7 @@ button {
    background-color: #ffffff;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
 }
  
 

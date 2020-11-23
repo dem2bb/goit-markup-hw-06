@@ -280,7 +280,10 @@
       <div class="footer-thirdblock">
         <p class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
         <div class="footer-subscribe">
-          <buton class="button-subscribe">Подписаться
+          <form class="subscribe-form" action="">
+            <input type="email" name="email" class="email" placeholder="E-mail">
+          </form>
+          <buton type="submit" class="button-subscribe">Подписаться
             <svg class="icon-telegram" width="34" height="34">
               <use href="./images/symbol-defs.svg#icon-telegram"></use>
             </svg>
@@ -288,6 +291,9 @@
         </div>
       </div>
   </footer>
+
+
+
   <!--BACKDROP-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
