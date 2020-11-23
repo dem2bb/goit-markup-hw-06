@@ -812,10 +812,21 @@ padding-left: 42px;
     position: absolute;
 }
 
-.checkbox:checked + .logo-policy {
-    background-color: blue;
-}
+.input-policy:checked + .full-check {
+    border-color: var(--navigation-but-color);
+    background-color: var(--navigation-but-color);
+    background-image: url('../images/end.svg');
+    background-size: contain;
+    background-origin: border-box;
 
+}
+.full-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
 
 /*----------------------------PORTFOLIO.HTML----------------------------*/
 /*----------------------------MAIN----------------------------*/
