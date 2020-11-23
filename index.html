@@ -292,8 +292,6 @@
       </div>
   </footer>
 
-
-
   <!--BACKDROP-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -303,6 +301,36 @@
           </use>
         </svg>
       </button>
+      <form class="form" action="">
+        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="form-field">
+          <label for="name" class="form-label">Имя</label>
+          <svg class="logo-form" width="12" height="12">
+            <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
+          </svg>
+          <input type="name" name="name" id="name" class="nameok">
+        </div>
+        <div class="form-field">
+          <label for="tel" class="form-label">Телефон</label>
+          <input type="tel" name="tel" id="tel">
+        </div>
+        <div class="form-field">
+          <label for="email" class="form-label">Почта</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-field comment-field">
+          <label for="comment" class="form-label">Комментарий</label>
+          <textarea name="comment" class="comment" id="comment" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="policy-field">
+          <input type="checkbox" name="policy" id="policy" class="policy">
+          <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия
+              договора</a></label>
+        </div>
+        <div class="button-form">
+          <button class="button-send">Отправить</button>
+        </div>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>

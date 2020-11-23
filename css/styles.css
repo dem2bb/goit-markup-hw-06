@@ -19,9 +19,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-button {
-    outline: 0;
-}
 .page {
     background-color: white;
     font-family: Roboto, sans-serif;
@@ -597,6 +594,8 @@ width: 570px;
     border-radius: 4px;
     background-color: #2F303A;
     padding-left: 16px;
+}
+.email::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -631,7 +630,6 @@ button {
  .backdrop.is-hidden {
      opacity: 0;
      pointer-events: none;
-
  }
 .modal {
     position: absolute;
@@ -642,9 +640,7 @@ button {
     min-width: 528px;
     background-color: #ffffff;
     display: flex;
-
 }
-
 .button-close {
    position: absolute;
    right:0;
@@ -662,7 +658,109 @@ button {
    align-items: center;
    cursor: pointer;
 }
- 
+.form {
+    margin: 40px;
+}
+ .form-title {
+font-weight: bold;
+font-size: 20px;
+line-height: 1.15;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+margin-bottom: 12px;
+text-align: center;
+ }
+ .form-field {
+     margin-bottom: 10px;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     outline: 1px solid tomato;
+ }
+
+.comment-field {
+    margin-bottom: 0;
+}
+
+.comment {
+    width: 448px;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+
+}
+.comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+                 font-size: 12px;
+                 line-height: 1.16;
+                 letter-spacing: 0.01em;
+}
+
+.form-field input {
+         border: 1px solid rgba(33, 33, 33, 0.2);
+         box-sizing: border-box;
+         border-radius: 4px;
+         min-height: 40px;
+}
+.form-label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color);
+}
+.policy-field label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    padding-left: 7px;
+}
+.policy-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.policy-link {
+    color: var(--navigation-but-color);
+    text-decoration: underline;
+}
+.nameok {
+    position: relative;
+}
+.button-send {
+       font-weight: bold;
+       font-size: 16px;
+       line-height: 1.87;
+       letter-spacing: 0.06em;
+       display: flex;
+       border: 0;
+       align-items: center;
+       justify-content: center;
+       min-width: 200px;
+       color: var(--white-text-color);
+       background-color: var(--navigation-but-color);
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+       border-radius: 4px;
+       min-width: 200px;
+       height: 50px;
+       margin-left: 12px;
+       }
+.button-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo-form {
+    position: absolute;
+
+}
 
 /*----------------------------PORTFOLIO.HTML----------------------------*/
 /*----------------------------MAIN----------------------------*/
